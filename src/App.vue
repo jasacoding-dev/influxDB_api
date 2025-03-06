@@ -1,17 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <BucketList />
+    <BucketForm />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BucketList from './components/BucketList.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    BucketList
   }
-}
+};
 </script>
 
 <style>
