@@ -1,5 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router'; // Pastikan ini diimpor
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
 
-
-createApp(App).mount('#app')
+createApp(App)
+  .use(router) // Pastikan router digunakan
+  .mount('#app');
